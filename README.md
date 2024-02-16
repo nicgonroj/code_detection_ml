@@ -1,25 +1,23 @@
 # Deploy ML models with FastAPI, Docker, and Heroku
 
-### 1. Develop and save the model 
+### 1. Develop and save the model
 
-modelo RF CLF 
+Random Forest CLF - Code Detection by Product Description.
 
 ### 2. Create Docker container
 
 ```bash
-docker build -t app-name .
+docker build -t code-detection .
 
-docker run -p 80:80 app-name
+docker run -p 80:80 code-detection
 ```
 
 ### 3. Create Git repo
 
-If you clone this repo this step is not needed. Or you can delete this git repo with `rm -rf .git` and start with a new one:
-
 ```bash
 git init
 git add .
-git commit -m "initial commit"
+git commit -m ""
 git branch -M main
 ```
 
@@ -27,8 +25,8 @@ git branch -M main
 
 ```bash
 heroku login
-heroku create your-app-name
-heroku git:remote your-app-name
+heroku create detection-heroku
+heroku git:remote detection-heroku
 heroku stack:set container
 git push heroku main
 ```
