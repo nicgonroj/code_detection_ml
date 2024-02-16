@@ -1,8 +1,9 @@
 # Deploy ML models with FastAPI, Docker, and Heroku
 
-### 1. Develop and save the model with this Colab
+### 1. Develop and save the model
 
-[Open Colab](https://colab.research.google.com/drive/1uaALcaatvxOu42IhQA4r0bahfdpw-Z7v?usp=sharing)
+Se creo un modelo de ML - RF Classifier - Detección de productos según descripción
+
 
 ### 2. Create Docker container
 
