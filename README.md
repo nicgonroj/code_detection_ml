@@ -2,25 +2,22 @@
 
 ### 1. Develop and save the model
 
-Se creo un modelo de ML - RF Classifier - Detección de productos según descripción
-
+Random Forest CLF - Code Detection by Product Description.
 
 ### 2. Create Docker container
 
 ```bash
-docker build -t app-name .
+docker build -t code-detection .
 
-docker run -p 80:80 app-name
+docker run -p 80:80 code-detection
 ```
 
 ### 3. Create Git repo
 
-If you clone this repo this step is not needed. Or you can delete this git repo with `rm -rf .git` and start with a new one:
-
 ```bash
 git init
 git add .
-git commit -m "initial commit"
+git commit -m ""
 git branch -M main
 ```
 
@@ -28,8 +25,8 @@ git branch -M main
 
 ```bash
 heroku login
-heroku create your-app-name
-heroku git:remote your-app-name
+heroku create detection-heroku
+heroku git:remote detection-heroku
 heroku stack:set container
 git push heroku main
 ```
